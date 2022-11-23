@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+      
+    </div>
+    <script>
+        const newDiv = document.createElement('div');
+        const newPara = document.createElement('p');
+        const newLink = document.createElement('a');
+        const newImage = document.createElement('img');
+
+        const container = document.querySelector('.container');
+        
+        // const addingData = document.createTextNode('this is javascript');
+        // newDiv.append(addingData)
+
+        const new_div_text = document.createTextNode("Hello world");
+        const new_paragraph_text = document.createTextNode("This is a paragraph");
+        const new_link_text = document.createTextNode("Click to visit link");
+
+        //append the textsNodes to the elements
+        newDiv.append(new_div_text);
+        newPara.append(new_paragraph_text);
+        newLink.append(new_link_text);
+        newImage.setAttribute('src', 'js_logo.png');
+        newImage.setAttribute('width', '500px');
+        newImage.setAttribute('height', '300px');
+        console.log(newDiv, newPara, newLink, newImage);
+
+        container.appendChild(newDiv);
+        container.appendChild(newPara);
+        container.appendChild(newLink);
+        container.appendChild(newImage);
+
+        
+        
+    </script>
+</body>
+</html>
