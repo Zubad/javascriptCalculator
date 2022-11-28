@@ -21,11 +21,11 @@ operand_btns.forEach((btn) => {
     remove_active();
     if (output.value == "0") {
       output.value = e.target.value;
-    } else if (output.value.includes(".")) {
-      output.value = output.value + "" + e.target.value.replace(".", "");
     } else if (is_operator) {
       is_operator = false;
       output.value = e.target.value;
+    } else if (output.value.includes(".")) {
+      output.value = output.value + "" + e.target.value.replace(".", "");
     } else {
       output.value = output.value + "" + e.target.value;
     }
